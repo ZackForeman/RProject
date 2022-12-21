@@ -4,3 +4,13 @@ https://www.core-econ.org/doing-economics/book/text/01-03.html#part-12-variation
 Note that regional mean anomalies (in particular global anomalies) are not computed from the current absolute mean and the 1951-80 mean for that region, but from station temperature anomalies
 
 3. b. As time increases the temperature anomoly increases in size
+
+
+Quartiles (-0.1, 0.11) 
+551 in 1981 to 2010
+
+1921 - 1950: DJF -0.03241379, 	MAM -0.04586207, 	JJA -0.05551724, 	SON 0.07965517
+1951 - 1980: DJF 0.008965517, 	MAM 7.776347e-19, 	JJA -0.003103448, 	SON -0.00862069
+1981 - 2010: DJF 0.5237931, 	MAM 0.5113793, 		JJA 0.407931, 		SON 0.4348276
+
+correlation = 0.9157136
