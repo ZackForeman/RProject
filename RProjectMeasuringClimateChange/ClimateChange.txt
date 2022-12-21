@@ -1,0 +1,6 @@
+https://www.core-econ.org/doing-economics/book/text/01-03.html#part-12-variation-in-temperature-over-time
+1. Temperature anomalies indicate how much warmer or colder it is than normal for a particular place and time. For the GISS analysis, normal always means the average over the 30-year period 1951-1980 for that place and time of year. This base period is specific to GISS, not universal. But note that trends do not depend on the choice of the base period: If the absolute temperature at a specific location is 2 degrees higher than a year ago, so is the corresponding temperature anomaly, no matter what base period is selected, since the normal temperature used as base point (which is subtracted from the absolute temperature to get the anomaly) is the same for both years.
+
+Note that regional mean anomalies (in particular global anomalies) are not computed from the current absolute mean and the 1951-80 mean for that region, but from station temperature anomalies
+
+3. b. As time increases the temperature anomoly increases in size
