@@ -51,11 +51,23 @@ str(CO2data)
 #print(mean(slice2$JJA))
 #print(mean(slice2$SON))
 
-slice1 <- subset(C02data, Year>1959)
-df_date <- as.Date(paste(slice1$Year, slice1$Month, "01"), format = "%Y %m %d")
+#slice1 <- subset(C02data, Year>1959)
+#df_date <- as.Date(paste(slice1$Year, slice1$Month, "01"), format = "%Y %m %d")
 
-plot(df_date, slice1$Interpolated, xlab="Year", ylab="CO2 levels", type="l", col = "red")
-lines(df_date, slice1$Trend, xlab="Year", ylab="CO2 levels", type="l", col = "blue")
-legend("right", c("Interpolated", "Trend"), col = c("red", "blue"), lwd = 2)
-title("A Graph To Show How CO2 Levels Have Changed Over Time")
+#plot(df_date, slice1$Interpolated, xlab="Year", ylab="CO2 levels", type="l", col = "red")
+#lines(df_date, slice1$Trend, xlab="Year", ylab="CO2 levels", type="l", col = "blue")
+#legend("right", c("Interpolated", "Trend"), col = c("red", "blue"), lwd = 2)
+#title("A Graph To Show How CO2 Levels Have Changed Over Time")
 
+CO2data_june <- CO2data[CO2data$Month == 6,]
+names(CO2data)[1] <- "Year"
+tempCO2data <- merge(tempdata, CO2data_june)
+
+plot(tempCO2data$Jun, tempCO2data$Trend, 
+     xlab = "Temperature anomaly (degrees Celsius)", 
+     ylab = "CO2 levels (trend, mole fraction)", 
+     pch = 16, col = "blue")
+
+title("Scatterplot for CO2 emissions and temperature anomalies (JUN)")
+
+print(cor(tempCO2data$Jun, tempCO2data$Trend))
